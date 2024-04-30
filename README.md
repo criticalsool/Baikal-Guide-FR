@@ -41,8 +41,7 @@ Ce guide a été écrit à partir des sources suivantes :
 - [sabre.io/baikal](http://sabre.io/baikal/), merci à [Jérôme Schneider](https://github.com/jeromeschneider) et [fruux](https://fruux.com/)
 - [Guide en allemand pour une installation sur Raspberry Pi](https://github.com/JsBergbau/BaikalAnleitung), merci à [@JsBergbau](https://github.com/JsBergbau)
 - [Kinamo pour la sauvegarde de la base de données](https://www.kinamo.fr/fr/support/faq/mysql-backup-automatique-base-de-donnees)
-- [ChrisTitus pour l'amélioration en sécurité du serveur](https://christitus.com/secure-web-server/)
-- Mon expérience
+- [ChrisTitus](https://christitus.com/secure-web-server/)
 
 ## Prérequis
 
