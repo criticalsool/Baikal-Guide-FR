@@ -488,7 +488,7 @@ netstat -tunlp
 ```
 
 ## Questions et contributions
-N'hésitez pas à poser vos questions en soumettant une [issue](https://github.com/AlexandreMonroche/BaikalGuide/issues) ou une [pull request](https://github.com/AlexandreMonroche/BaikalGuide/pulls) !
+N'hésitez pas à poser vos questions en soumettant une [issue](https://github.com/criticalsool/Baikal-Guide-FR/issues) ou une [pull request](https://github.com/criticalsool/Baikal-Guide-FR/pulls) !
 
 Toute contribution est également la bienvenue.
 
