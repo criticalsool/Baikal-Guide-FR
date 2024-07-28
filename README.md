@@ -47,9 +47,9 @@ Ce guide a été écrit à partir des sources suivantes :
 
 Pour suivre ce guide vous aurez besoin
 - D'un serveur basé sur [Debian](https://www.debian.org/) avec accès root
-- D'un nom de domaine avec l'enregistrement DNS A configuré vers l'IP de votre serveur.
+- D'un nom de domaine avec un enregistrement DNS A configuré vers l'IP de votre serveur.
 
-> Dans la suite du guide, il est considéré que le nom de domaine est `domaine.fr` et le sous-domaine avec l'enregistrement est `cal.domaine.fr`
+> Dans la suite du guide, il est considéré que le nom de domaine est `domaine.fr` et le sous-domaine avec l'enregistrement pointant vers votre machine est `cal.domaine.fr`
 
 ---
 
@@ -82,9 +82,9 @@ Rendons nous sur `http://cal.domaine.fr/`, vous devriez voir la page par défaul
 ![Apache2 default](images/Baïkal/apache2.jpg "Apache2 default")
 
 ### HTTPS
-Pour activer [HTTPS](https://fr.wikipedia.org/wiki/HyperText_Transfer_Protocol_Secure) sur votre site Web, vous devez obtenir un certificat (un type de fichier) auprès d'une autorité de certification (CA). Nous utiliserons [Let's Encrypt](https://letsencrypt.org/getting-started/) comme autorité de certification. Afin d'obtenir un certificat pour votre domaine auprès de Let's Encrypt, vous devez démontrer que vous contrôlez le domaine.
+Pour activer [HTTPS](https://fr.wikipedia.org/wiki/HyperText_Transfer_Protocol_Secure) sur votre site Web, vous devez obtenir un [certificat SSL/TLS](https://fr.wikipedia.org/wiki/Transport_Layer_Security#Authentification_par_certificat_num%C3%A9rique) auprès d'une autorité de certification (CA). Nous utiliserons dans ce guide [Let's Encrypt](https://letsencrypt.org/getting-started/) comme autorité de certification car cela est gratuit et simple d'utilisation. Afin d'obtenir un certificat pour votre domaine auprès de **Let's Encrypt**, vous devez démontrer que vous possèdez le domaine.
 
-[Certbot](https://certbot.eff.org/) permet une gestion de certificats Let's Encrypt, automatisant la génération d'un certificat tout en prouvant la possession du serveur web.
+[Certbot](https://certbot.eff.org/) est un outil permettant la gestion de certificats **Let's Encrypt**, automatisant la génération d'un certificat et réalisant la preuve de votre possession du serveur web.
 
 #### Installation de Certbot
 ```bash
@@ -100,6 +100,7 @@ certbot certonly --standalone
 ```bash
 certbot renew --dry-run
 ```
+> Le certificat devra être renouvellé tous les 3 mois, pour cela saississez la commande `certbot renew`
 
 #### Vérification
 Rendons nous sur `https://cal.domaine.fr/`, vous devriez voir une icone de cadenas dans la barre URL.
@@ -131,7 +132,7 @@ Aller à [github.com/sabre-io/Baikal/releases/latest](https://github.com/sabre-i
 wget https://github.com/sabre-io/Baikal/releases/download/0.9.5/baikal-0.9.5.zip
 ```
 
-### Installer [unzip](https://packages.debian.org/bullseye/unzip)
+### Installer [unzip](https://packages.debian.org/bullseye/unzip) pour décompresser l'archive
 ```bash
 apt install unzip -y
 ```
@@ -488,8 +489,8 @@ netstat -tunlp
 ```
 
 ## Questions et contributions
-N'hésitez pas à poser vos questions en soumettant une [issue](https://github.com/criticalsool/Baikal-Guide-FR/issues) ou une [pull request](https://github.com/criticalsool/Baikal-Guide-FR/pulls) !
+N'hésitez pas à poser vos questions en soumettant une [issue](https://github.com/criticalsool/Baikal-Guide-FR/issues) !
 
-Toute contribution est également la bienvenue.
+Toute contribution est également la bienvenue en réalisant une [pull request](https://github.com/criticalsool/Baikal-Guide-FR/pulls).
 
 **Enjoy !**
