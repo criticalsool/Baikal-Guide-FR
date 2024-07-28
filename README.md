@@ -125,7 +125,7 @@ cd /srv
 
 Aller à [github.com/sabre-io/Baikal/releases/latest](https://github.com/sabre-io/Baikal/releases/latest) et télécharger la dernière version de l'archive ZIP.
 
-![Latest version](images/Baïkal/latest_version.png "Latest version")
+![Latest version](images/Baïkal/0.9.5_release.png "Latest version")
 
 #### Téléchargement en ligne de commande pour la version 0.9.5
 ```bash
