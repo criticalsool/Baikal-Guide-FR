@@ -125,11 +125,11 @@ cd /srv
 
 Aller à [github.com/sabre-io/Baikal/releases/latest](https://github.com/sabre-io/Baikal/releases/latest) et télécharger la dernière version de l'archive ZIP.
 
-![Latest version](images/Baïkal/0.9.5_release.png "Latest version")
+![Latest version](images/Baïkal/0.10.1_release.png "Latest version")
 
-#### Téléchargement en ligne de commande pour la version 0.9.5
+#### Téléchargement en ligne de commande pour la version 0.10.1
 ```bash
-wget https://github.com/sabre-io/Baikal/releases/download/0.9.5/baikal-0.9.5.zip
+wget https://github.com/sabre-io/Baikal/releases/download/0.10.1/baikal-0.10.1.zip
 ```
 
 ### Installer [unzip](https://packages.debian.org/bullseye/unzip) pour décompresser l'archive
@@ -139,8 +139,8 @@ apt install unzip -y
 
 ### Extraction de l'archive
 ```bash
-unzip baikal-0.9.5.zip
-rm baikal-0.9.5.zip
+unzip baikal-0.10.1.zip
+rm baikal-0.10.1.zip
 ```
 
 ### Modification récursive du propriétaire
@@ -397,11 +397,11 @@ mv baikal /backup/baikal.bak
 ```
 Téléchargement de la nouvelle version
 ```bash
-wget https://github.com/sabre-io/Baikal/releases/download/0.9.5/baikal-0.9.5.zip
+wget https://github.com/sabre-io/Baikal/releases/download/0.10.1/baikal-0.10.1.zip
 ```
 Décompression de l'archive
 ```bash
-unzip baikal-0.9.5.zip
+unzip baikal-0.10.1.zip
 ```
 Suppression des dossiers `config` et `Specific` de la nouvelle version
 ```bash
@@ -431,7 +431,7 @@ Comme nous avons déjà fait une sauvegarde, il suffit de cliquer sur `Start Upg
 
 On supprime l'archive
 ```bash
-rm -r /srv/baikal-0.9.5.zip
+rm -r /srv/baikal-0.10.1.zip
 ```
 
 Après avoir vérifié que la synchronisation est toujours en cours et que les entrées sont toujours là, on peut supprimer la sauvegarde du dossier
